@@ -4,11 +4,16 @@
 package sequality;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+    System.out.println(new Calculate().getSum(2, 3));
+    System.out.println(new Calculate().getSumXtoY(1, 10));
+    System.out.println(new Calculate().getSumOfOdd(1, 10));
+    System.out.println(new task02().getDistributed(1, 10));
+
+  }
 }
